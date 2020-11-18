@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243,243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Instagram_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.Instagram-phone {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 60%;
+}
+
+.Instagram-phone {
+    width: 60rem;
+}
+
+.Instagram_logo {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 60%;
+}
+
+.Instagram_logo {
+    width: 10rem;
+}
+
+.Instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19px;
+}
+
+.profile_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_photo img {
+    height: 6rem;
+}
+
+.Instagram_login {
+    background-color: #0095E6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px
+}
+
+.Instagram_logout {
+    color: #0095E6;
+    margin-top: 1rem;
+}
+
+.not_account {
+    color: rgb(160, 160, 160);
+}
+
+.link_blue {
+    color: #0095E6
+}
+
+.get_the_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.dowload {
+    display: flex;
+    width: 100%;
+    justify-items: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app_dowload {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app_dowload:nth-child(1) {
+    background-image: url('./IMG/disponivel-na-app-store-botao-1.png')
+}
+.app_dowload:nth-child(2) {
+    background-image: url('./IMG/disponivel-google-play-badge.png');
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .Instagram_wrapper {
+        width: 90%;
+    }
+}
+
+@media (Max-Width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+    .Instagram_wrapper {
+        width: 90%;
+    }
+    .Instagram-phone {
+        display: none;
+    }
+    .Instagram-continue {
+        width: 100%;
+    }
+    .group {
+        border: 1px solid transparent;
+    }
+}
